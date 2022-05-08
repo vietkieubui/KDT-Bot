@@ -27,4 +27,4 @@ bot.on('message', async message => {
 
 
 
-bot.login("ODc4MDk2Nzc1Nzk2Mzc5NzI4.YR8NWQ.00liIVLx1nHSBfWHbIcQcwnjGQM");
+bot.login("ODc4MDk2Nzc1Nzk2Mzc5NzI4.YR8NWQ.00liIVLx1nHSBfWHbIcQcwnjGQM"); //change your Bot Token
