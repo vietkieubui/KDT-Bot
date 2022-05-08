@@ -1,30 +1,31 @@
-const { Client, Intents, Collection } = require('discord.js');
+const { Client, Intents, Collection } = require("discord.js");
 
-const bot = new Client({ intents: ['GUILD_VOICE_STATES', 'GUILD_MESSAGES', 'GUILDS'] });
+const bot = new Client({
+  intents: ["GUILD_VOICE_STATES", "GUILD_MESSAGES", "GUILDS"],
+});
 
-const prefix = '!';
+const TOKEN = process.env.TOKEN;
 
-const { commands } = require('./commands');
+const prefix = "!";
+
+const { commands } = require("./commands");
 bot.commands = commands;
 bot.aliases = new Collection();
 
-bot.on('ready', async() => {
-    console.log(`${bot.user.tag} is ready!`);
+bot.on("ready", async () => {
+  console.log(`${bot.user.tag} is ready!`);
 });
 
-bot.on('message', async message => {
-    if (message.author.bot) return;
-    if (!message.content.startsWith(prefix)) return;
-    const args = message.content.slice(prefix.length).trim().split(/ +/g);
-    const action = args.shift().toLowerCase();
-    if (action.length === 0) return;
+bot.on("message", async (message) => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const action = args.shift().toLowerCase();
+  if (action.length === 0) return;
 
-    bot.commands.forEach(command => {
-        if (action === command.name)
-            command.run(bot, message, args);
-    });
-})
+  bot.commands.forEach((command) => {
+    if (action === command.name) command.run(bot, message, args);
+  });
+});
 
-
-
-bot.login("ODc4MDk2Nzc1Nzk2Mzc5NzI4.YR8NWQ.00liIVLx1nHSBfWHbIcQcwnjGQM"); //change your Bot Token
+bot.login("YOUR_TOKEN"); //change your Bot Token
