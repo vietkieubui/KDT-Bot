@@ -28,4 +28,6 @@ bot.on("message", async (message) => {
   });
 });
 
-bot.login("YOUR_TOKEN"); //change your Bot Token
+bot.login(
+  "ODc4MDk2Nzc1Nzk2Mzc5NzI4.GR2oqm.06jmdWqbiYgT7rjE_CDm0k2gooMNXe0TESDZB8"
+); //change your Bot Token

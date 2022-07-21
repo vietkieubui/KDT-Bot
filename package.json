@@ -13,5 +13,24 @@
     "youtube-dl-exec": "^1.2.4",
     "yt-search": "^2.10.1",
     "ytdl-core": "^4.9.1"
-  }
+  },
+  "name": "kdt-bot",
+  "description": "<b>A Discord Bot</b>\r <br/>\r Using Nodejs<br>\r Update your Bot Token in file index.js\r <br/>\r Run runbot.bat to enjoy!!! <3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vietkieubui/KDT-Bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vietkieubui/KDT-Bot/issues"
+  },
+  "homepage": "https://github.com/vietkieubui/KDT-Bot#readme"
 }
