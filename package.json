@@ -6,8 +6,10 @@
     "ascii-table": "^0.0.9",
     "discord-player": "^5.0.2",
     "discord.js": "^13.1.0",
+    "dotenv": "^16.0.1",
     "ffmpeg-static": "^4.4.0",
     "google-tts-api": "^2.0.2",
+    "nodemon": "^2.0.19",
     "opusscript": "^0.0.8",
     "twemoji-parser": "^13.1.0",
     "youtube-dl-exec": "^1.2.4",
@@ -18,7 +20,6 @@
   "description": "<b>A Discord Bot</b>\r <br/>\r Using Nodejs<br>\r Update your Bot Token in file index.js\r <br/>\r Run runbot.bat to enjoy!!! <3",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index"
